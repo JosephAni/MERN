@@ -11,4 +11,3 @@ The React component of the MERN stack provides a JavaScript library for building
 Finally, the Node.js component of the MERN stack provides an asynchronous event-driven JavaScript runtime that enables developers to build fast and scalable network applications. This makes it easy for developers to quickly create server-side logic for their CRM application such as processing customer requests or sending notifications. Additionally, Node.js enables developers to easily deploy their applications on the cloud or on-premises servers with minimal setup time.
 
 Overall, the MERN stack web framework is an excellent choice for developing powerful customer relationship management (CRM) applications. It provides a robust set of features that make it easy to develop dynamic websites and applications while also offering scalability, flexibility, and cost efficiency advantages over other frameworks.
-# MERN
