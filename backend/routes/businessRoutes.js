@@ -1,4 +1,10 @@
-import { addNewBusiness } from '../controllers/businessControllers'
+import {
+  addNewBusiness,
+  getBusiness,
+  getBusinessWithID,
+  updateBusiness,
+  deleteBusiness,
+} from '../controllers/businessControllers'
 
 const routes = (app) => {
   app
@@ -8,6 +14,17 @@ const routes = (app) => {
 
     //POST endpoint
     .post(addNewBusiness)
+
+  app
+    .route('/business/:BusinessId')
+    //Get specific business
+    .get(getBusinessWithID)
+
+    //update a specific business
+    .put(updateBusiness)
+
+    // update a specific business
+    .delete(deleteBusiness)
 }
 
 export default routes
