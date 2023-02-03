@@ -7,28 +7,29 @@ import BusinessForm from './Business/BusinessForm'
 
 class App extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       business: [],
       currentBusiness: {},
     }
 
-    this.updateCurrentBusiness = this.updateCurrentBusiness.bind(this);
+    this.updateCurrentBusiness = this.updateCurrentBusiness.bind(this)
   }
 
   componentDidMount() {
-    const url = 'http://localhost:4000/business';
+    const url = 'http://localhost:4000/business'
 
-    axios.get(url)
+    axios
+      .get(url)
       .then((Response) => {
         this.setState({
-          business: Response.data
+          business: Response.data,
         })
       })
       .catch((error) => {
-        console.log(error);
-      });
-  };
+        console.log(error)
+      })
+  }
 
   updateCurrenusiness(item) {
     this.setState({
@@ -36,28 +37,38 @@ class App extends React.Component {
     })
   }
 
-render() {
-  return (
-    <div className='container-fluid'>
-      <div className='row'>
-        <div className='col s12'>Menu</div>
-      </div>
-      <div className='row'>
-        <div className='col s3'>
-          <BusinessList business={this.state.business} 
-          updateCurrentBusiness={this.updateCurrentBusiness}/>
+  render() {
+    return (
+      <div className='container-fluid'>
+        <div className='row'>
+          <nav>
+              
+            <div className='nav-wrapper blue-grey darken-1'>
+              <a href='/' className='brand-logo'>
+                Business Management
+              </a>
+            </div>
+          </nav>
         </div>
-        <div className='col s9'>
-          <BusinessSingle />
+        <div className='row'>
+          <div className='col s3'>
+            <BusinessList
+              business={this.state.business}
+              updateCurrentBusiness={this.updateCurrentBusiness}
+            />
+          </div>
+          <div className='col s9'>
+            <BusinessSingle business={this.state.currentBusiness} />
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col s12'>
+            <BusinessForm />
+          </div>
         </div>
       </div>
-      <div className='row'>
-        <div className='col s12'>
-          <BusinessForm />
-        </div>
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default App
