@@ -12,4 +12,12 @@ Finally, the Node.js component of the MERN stack provides an asynchronous event-
 
 Overall, the MERN stack web framework is an excellent choice for developing powerful customer relationship management (CRM) applications. It provides a robust set of features that make it easy to develop dynamic websites and applications while also offering scalability, flexibility, and cost efficiency advantages over other frameworks.
 
-![This is an image](../business/frontend/public/mern.jpg)
+###
+
+What you'll learn from the MERN stack web framework.
+-Setting up Babel in the server
+-Setting up your database and schema
+-Creating POST, PUT, and DELETE endpoints
+-Setting up a styling library
+-Creating a React front end
+-Creating forms
