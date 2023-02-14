@@ -14,9 +14,9 @@ Overall, the MERN stack web framework is an excellent choice for developing powe
 
 ## What you'll learn from the MERN stack web framework
 
--Setting up Babel in the server
--Setting up your database and schema
--Creating POST, PUT, and DELETE endpoints
--Setting up a styling library
--Creating a React front end
--Creating forms
+- Setting up Babel in the server
+- Setting up your database and schema
+- Creating POST, PUT, and DELETE endpoints
+- Setting up a styling library
+- Creating a React front end
+- Creating forms
